@@ -20,23 +20,41 @@ as encrypted noise and arrives in plain text on the other side.
 
 ## How it works
 [Application on vm1]
+
 ↓
+
 [OS generates IPv4 packet]
+
 ↓
+
 [Routing table directs it to tun0]
+
 ↓
+
 [vpn_send.py intercepts it from tun0]
+
 ↓
+
 [ChaCha20-Poly1305 encrypts it]
+
 ↓
+
 [nonce + ciphertext sent over UDP]
+
 ↓ (travels as gibberish on the real network)
+
 [vpn_recv.py receives the UDP packet]
+
 ↓
+
 [ChaCha20-Poly1305 decrypts it]
+
 ↓
+
 [Decrypted packet injected into tun0 on vm2]
+
 ↓
+
 [Application on vm2 receives it in plain text]
 
 ---
