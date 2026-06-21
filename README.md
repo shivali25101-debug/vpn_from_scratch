@@ -166,7 +166,11 @@ on vm2.
 
 ## Demo
 ![VPN demo screenshot](demo1.png)
+The above screenshot demonstrate the packet transmission between the two virtual machines , vm1 being the sender and vm2 being the receiver .The left side is the vm1 where we can see the packets being sent successfully after being encrypted and the right side shows the packets being received and decrypted. On the left side i have also demonstrated the how the real network traffic would view the transmission . that is it won't be able to see the souce ip , nor the destination ip and obviously not the actual data being sent and that is how a vpn works . 
+
+
 ![VPN demo screenshot](demo2.png)
+In this screenshot , i have shown actual readable messages being sent from vm1 to vm2 . Both the devices can see the actual clear data since it is being encrypted and decrypted on vm1 and vm2 respectively . Apart from these two devices , no other host (seated on the network traffic or the udp) can view the actual messages being sent . 
 
 ---
 
