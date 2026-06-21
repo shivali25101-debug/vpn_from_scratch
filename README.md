@@ -165,7 +165,7 @@ on vm2.
 ---
 
 ## Demo
-![VPN demo screenshot](screenshot 2026-06-20 232959.png)
+![VPN demo screenshot](Screenshot 2026-06-20 232959.png)
 
 
 ---
