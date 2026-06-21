@@ -172,6 +172,10 @@ The above screenshot demonstrate the packet transmission between the two virtual
 ![VPN demo screenshot](demo2.png)
 In this screenshot , i have shown actual readable messages being sent from vm1 to vm2 . Both the devices can see the actual clear data since it is being encrypted and decrypted on vm1 and vm2 respectively . Apart from these two devices , no other host (seated on the network traffic or the udp) can view the actual messages being sent . 
 
+![VPN demo screenshot](demo3.png)
+Now in this demo screenshot i have showed how the X25519 public/private key pair works . We can see that the vm1 sent a public key to vm2 and waited for the vm2's public key . Upon receiving the public key of vm2 , it used the elliptic curve Diffie-Hellman algorithm to generate a shared secret by combining it with its own private key . When the two devices shared secret matches , then the connection between them is established. 
+
+
 ---
 
 ## What I learned
