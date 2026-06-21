@@ -166,7 +166,7 @@ on vm2.
 
 ## Demo
 ![VPN demo screenshot](demo1.png)
-
+![VPN demo screenshot](demo2.png)
 
 ---
 
